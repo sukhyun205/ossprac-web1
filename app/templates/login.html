@@ -2,19 +2,16 @@
 <html>
    <body>
 
-      <form action = "/result" method = "POST">
-         <table border = 1>
-            {% for key, value in result.items() %}
-         
-               <tr>
-                  <th> {{ key }} </th>
-                  <td> <input type="text" name={{key}} value={{value}}/> </td>
-               </tr>
-            
-            {% endfor %}
-         </table>
-         
-         <p><input type="button" value="MODIFY" onClick="history.go(-1)"> <input type = "submit" value = "SUBMIT" /></p>
+      <form action = "" method = "POST">
+         <d1>
+            <dt>아이디:</dt>
+            <dd>
+               <input type="text" name = "username" value = "{{request.form.username}}">
+            </dd>
+            <dt>비밀번호:</dt>
+            <dd><input type="password" name="password"></dd>>
+         </d1>
+         <p></input type="submit" value="login"></p>
       </form>
 
    </body>
